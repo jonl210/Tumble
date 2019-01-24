@@ -1,0 +1,15 @@
+{% extends "home/layout.html" %}
+
+{% load static %}
+
+{% block css %}<link rel="stylesheet" type="text/css" href="{% static 'users/account_style.css' %}">{% endblock %}
+{% block title %}<title>Tumble - My Account</title>{% endblock %}
+
+{% block body %}
+  <h3 id="title">My Account <a id="logOutLink" href="{% url 'log_out_user' %}">log out</a></h3>
+  <h3 class="acctStyle" id="score">Score: 0</h3>
+  <h3 class="acctStyle">Username: <span class="acctInfo">{{ request.user.username }}</span></h3>
+  <h3 class="acctStyle">Email: <span class="acctInfo">{{ request.user.email }}</span></h3>
+  <a id="editAcctBtn" class="btn btn-primary acctBtnStyle" href="#">Edit Account</a>
+  <a id="deleteAcctBtn" class="btn btn-primary acctBtnStyle" href="#">Delete Account</a>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "home/layout.html" %}
+
+{% load static %}
+
+{% block css %}<link rel="stylesheet" type="text/css" href="{% static 'bookmarks/bookmark_form_style.css' %}">{% endblock %}
+{% block title %}<title>Tumble - Add Bookmark</title>{% endblock %}
+
+{% block body %}
+  <h3 id="title">Create a Bookmark</h3>
+  <form class="bookmarkForm" action="{% url 'create_bookmark' %}" method="POST">{% csrf_token %}
+    <label class="formLabel">URL</label>
+    <input name="url" type="url" class="form-control" required>
+    <label class="formLabel">Title (optional)</label>
+    <input name="title" type="text" class="form-control">
+    <label class="formLabel">Description (optional)</label>
+    <textarea name="description" class="form-control"></textarea>
+    <label class="formLabel">Tags (seperate tags with spaces)</label>
+    <input name="tags" type="text" class="form-control" required>
+    <input id="privateCheckBox" name="private" type="checkbox">
+    <label id="checkBoxLabel" for="privateCheckBox">Private</label>
+    <button id="submitButton" type="submit" class="btn btn-default">Create Bookmark</button>
+  </form>
+{% endblock %}

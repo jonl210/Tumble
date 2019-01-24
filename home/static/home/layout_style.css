@@ -1,0 +1,48 @@
+/* General Tags */
+body {
+  background-color: #f2e29c;
+}
+
+/* Nav Tags */
+#parentNav {
+  padding: 5px;
+}
+
+#brand {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 33px;
+  margin-left: 150px;
+  margin-top: -3px;
+  color: #FFF;
+}
+
+#toggleButton {
+  border: 2px solid #FFF;
+}
+
+.navBarLink {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  color: #FFF;
+}
+
+.navBarLink:hover {
+  color: #c9d2f8;
+}
+
+#newBookmarkButton {
+  color: #FFF;
+  background-color: #80CFA9;
+  margin-bottom: -1px;
+}
+
+#newBookmarkButton:hover {
+  background-color: #5bc190;
+}
+
+/* Body Tags */
+.bodyWrapper {
+  text-align: center;
+  padding-top: 100px;
+}

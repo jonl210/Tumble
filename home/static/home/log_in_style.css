@@ -1,0 +1,98 @@
+/* General Tags */
+
+body {
+  background-color: #9CACF2;
+}
+
+a {
+  text-decoration: none;
+  color: #A7E2E3;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Body Tags */
+
+.bodyWrapper {
+  text-align: center;
+  padding-top: 70px;
+}
+
+#appName {
+  font-family: 'Lato', sans-serif;
+  font-size: 60px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+#appDesc {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  color: #FFF;
+}
+
+.logInForm {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #CC3363;
+  margin-top: 31px;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.formTitle {
+  font-family: 'Lato,', sans-serif;
+  color: #FFF;
+}
+
+.formLabel {
+  color: #FFF;
+  float: left;
+}
+
+.logInForm input[type="email"] {
+  margin-bottom: 4px;
+}
+
+.logInForm input[type="text"] {
+  margin-bottom: 4px;
+}
+
+.logInForm input[type="password"] {
+  margin-bottom: 10px;
+}
+
+.logInForm .form-control {
+  position: relative;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  border: 0px;
+  -webkit-box-shadow: none;
+}
+
+#submitButton {
+  background-color: #80CFA9;
+  border: 2px solid #80CFA9;
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 5px;
+}
+
+#submitButton:hover {
+  background-color: #9cdabc;
+  border-color: #9cdabc;
+}
+
+#signUpText {
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  padding-top: 10px;
+  color: #FFF;
+}

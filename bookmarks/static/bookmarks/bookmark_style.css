@@ -1,0 +1,50 @@
+/* Body Tags */
+.bookmarkStyle {
+  margin: auto;
+  margin-bottom: 9px;
+  border-color: #fff;
+}
+
+.bookmarkBody {
+  padding-bottom: 6px;
+  padding-top: 10px;
+}
+
+.bookmarkTitle {
+  margin: auto;
+}
+
+.bookmarkDesc {
+  font-size: 15px;
+  margin: auto;
+}
+
+.bookmarkInfo {
+  margin: auto;
+}
+
+.date {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #bababa;
+}
+
+.editButtons {
+  float: right;
+}
+
+.deleteButton {
+  color: #EF626C;
+}
+
+.deleteButton:hover {
+  color: #EF626C;
+}
+
+.bookmarkTags {
+  margin: auto;
+}
+
+.tags {
+  color: #ffa333;
+}

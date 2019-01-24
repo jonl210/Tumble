@@ -1,0 +1,45 @@
+/* General Tags */
+
+/* Body Tags */
+#title {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#logOutLink {
+  font-size: 20px;
+  color: #bababa;
+  font-weight: initial;
+}
+
+#score {
+  color: #9CACF2;
+  font-size: 25px;
+}
+
+.acctStyle{
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  padding-top: 20px;
+}
+
+.acctInfo {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  color: #9CACF2;
+}
+
+.acctBtnStyle {
+  margin-top: 10px;
+}
+
+#editAcctBtn {
+  background-color: #A7E2E3;
+  border-color: #A7E2E3;
+}
+
+#deleteAcctBtn {
+  background-color: #EF626C;
+  border-color: #EF626C;
+}

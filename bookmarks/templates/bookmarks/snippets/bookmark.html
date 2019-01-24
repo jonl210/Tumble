@@ -1,0 +1,18 @@
+<div class="card bookmarkStyle" style="width: 25rem;">
+  <div class="card-body bookmarkBody">
+    <h6 class="card-title text-left bookmarkTitle"><a href="{{ bookmark.url }}" target="_blank">{{ bookmark.title }}</a></h6>
+    <p class="card-text bookmarkDesc text-left">{{ bookmark.description }}</p>
+    <ul class="list-inline text-left bookmarkInfo">
+      <li class="list-inline-item date">{{ bookmark.date|date:"M d Y" }}</li>
+      <li class="list-inline-item editButtons">
+        <a class="deleteButton" href="#">delete</a>
+      </li>
+    </ul>
+    <ul class="list-inline text-left bookmarkTags">
+      <li class="list-inline-item tags">tags: </li>
+      {% for tag in bookmark.tags.all %}
+        <li class="list-inline-item">{{ tag }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

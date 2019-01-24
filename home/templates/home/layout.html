@@ -1,0 +1,42 @@
+<!doctype html>
+
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/layout_style.css' %}">
+    {% block css %}{% endblock %}
+    {% block title %}<title>Tumble</title>{% endblock %}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="parentNav" class="navbar fixed-top navbar-expand-lg" style="background-color: #9CACF2;">
+      <a id="brand" class="navbar-brand" href="{% url 'home' %}">tumble</a>
+      <button id="toggleButton" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNavAltMarkup" class="collapse navbar-collapse">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link navBarLink" href="{% url 'user_bookmarks' %}"><i class="fas fa-bookmark"></i> Bookmarks</a>
+          <a class="nav-item nav-link navBarLink" href="#"><i class="fas fa-globe-americas"></i> Explore</a>
+          <a class="nav-item nav-link navBarLink" href="{% url 'account' %}"><i class="fas fa-user-circle"></i> Account</a>
+        </div>
+        <a id="newBookmarkButton" class="btn" href="{% url 'bookmark_form' %}" role="button"><i class="fas fa-plus"></i> Add Bookmark</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="bodyWrapper">
+        {% block body %}
+
+        {% endblock %}
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

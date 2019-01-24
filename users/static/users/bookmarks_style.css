@@ -1,0 +1,16 @@
+/* Body Tags */
+#title {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.bookmarkNav {
+  margin-bottom: 10px;
+}
+
+.bookmarkNavLinks {
+  font-size: 20px;
+  color: #bababa;
+}
