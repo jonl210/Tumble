@@ -5,3 +5,4 @@ Tumble is a simple social bookmarking site.
  - Django/Python
  - MySQL
  - Boostrap
+ - django-taggit
